@@ -1,0 +1,158 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f8; /* A light grey, common in apps */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top for mobile view */
+    min-height: 100vh;
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 420px; /* Max width for a phone-like display */
+    background-color: #ffffff;
+    min-height: 100vh; /* Fill screen height */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #3a5795; /* Darker blue from image */
+    color: white;
+    padding: 10px 15px 15px 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-top-text {
+    font-size: 0.75em; /* 12px if base is 16px */
+    opacity: 0.9;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.header-main {
+    display: flex;
+    align-items: center;
+}
+
+.header-main .back-arrow {
+    font-size: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header-main h1 {
+    margin: 0;
+    font-size: 1.25em; /* 20px */
+    font-weight: 500;
+    text-align: center; /* Centered as per image */
+    flex-grow: 1; /* Allow it to take space and center */
+    margin-right: 39px; /* Offset for back arrow to truly center title */
+}
+
+.form-container {
+    padding: 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    font-size: 1.125em; /* 18px */
+    color: #333333;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.section-title {
+    font-size: 1em; /* 16px */
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 0.875em; /* 14px */
+    color: #3a5795; /* Blue label text */
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #3a5795; /* Blue border */
+    border-radius: 4px;
+    font-size: 1em; /* 16px */
+    box-sizing: border-box;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-width: 2px;
+    padding: 11px 14px; /* Adjust padding to keep size consistent */
+}
+
+/* Remove placeholder styles if not needed, as image shows values */
+.input-field input::placeholder {
+    color: #999999;
+}
+
+.submit-btn {
+    background-color: #3a5795; /* Blue button */
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px; /* Highly rounded corners */
+    font-size: 1em; /* 16px */
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: auto; /* Not full width, as per image */
+    min-width: 150px;
+    display: block;
+    margin: 30px auto 10px auto; /* Centered with margin */
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #2e4575; /* Darker blue on hover */
+}
+
+/* Ensure icons are loaded */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
