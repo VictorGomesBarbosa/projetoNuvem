@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (error.message === "Invalid username/password.") {
                     err.innerHTML = "Usuário ou senha inválidos!";
                     err.style.display = "inline";
-                    // alert("Usuário ou senha inválidos. Verifique seus dados.");
+                    alert("Usuário ou senha inválidos. Verifique seus dados.");
                 } else {
                     alert("Erro ao fazer login: " + error.message);
                 }
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 await newUser.signUp();
                 alert(`Usuário cadastrado com sucesso!`);
                 userForm.reset();
-                
+
 
             } catch (error) {
                 const err = document.getElementById("erro-login");
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (error.message === "Invalid username/password.") {
                     err.textContent = "Usuário ou senha inválidos. Verifique seus dados.";
                     err.style.display = "inline";
-                    // alert("Usuário ou senha inválidos. Verifique seus dados.");
+                    alert("Usuário ou senha inválidos. Verifique seus dados.");
                 } else {
                     alert("Erro ao fazer login: " + error.message);
                 }
@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
             } catch (error) {
                 alert("Erro ao salvar produto: " + error.message);
             }
-        });        
+        });
 
-}  
+    }
 });
 // Função para expandir o card
 

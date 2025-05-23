@@ -13,8 +13,7 @@
         <header class="header">
             <div class="header-top-text">WellDone!</div> <!-- Texto superior ajustado -->
             <div class="header-main">
-                <a href="/projetoNuvem/index.html">
-                <i class="material-icons back-arrow">arrow_back</i></a>
+                <a href="index.html"><i class="material-icons back-arrow">arrow_back</i></a>
                 <h1>Login</h1> <!-- Título ajustado -->
             </div>
         </header>
@@ -22,6 +21,10 @@
             <p class="intro-text">Bem-vindo de volta! Faça login para continuar.</p> <!-- Texto introdutório ajustado -->
             
             <form id="loginForm">
+                <div id="erro-login" style ="display: none;" class="alert alert-danger" role="alert">
+                    Usuário Inválido <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                  </div>
+
                 <div class="input-field">
                     <input type="email" id="email" name="email" placeholder=" " required>
                     <label for="email">Email</label>
@@ -52,5 +55,7 @@
             });
         });
     </script>
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
