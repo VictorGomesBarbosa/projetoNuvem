@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aproveita</title>
+    <link rel="stylesheet" href="login.css"> <!-- Reutilizando o mesmo CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon"> <!-- Adicionando o favicon -->
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="header">
+            <div class="header-top-text">Aproveita</div> <!-- Texto superior ajustado -->
+            <div class="header-main">
+                <a href="home.html"><i class="material-icons back-arrow">VOLTAR</i></a>
+                <h1>Login</h1> <!-- Título ajustado -->
+            </div>
+        </header>
+        <main class="form-container">
+            <p class="intro-text">Bem-vindo de volta! Faça login para continuar.</p> <!-- Texto introdutório ajustado -->
+            
+            <form id="loginForm">
+                <div id="erro-login" style ="display: none;" class="alert alert-danger" role="alert">
+                    Usuário Inválido <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                  </div>
+
+                <div class="input-field">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                
+                <div class="input-field">
+                    <input type="password" id="password" name="password" placeholder=" " required>
+                    <label for="password">Senha</label>
+                </div>
+                
+                <button type="submit" class="submit-btn">ACESSAR</button> <!-- Botão ajustado -->
+            </form>
+        </main>
+    </div>
+    <script>
+        // Script para o efeito de label flutuante se necessário ou outras interações
+        document.querySelectorAll(".input-field input").forEach(input => {
+            if (input.value.trim() !== "") {
+                input.classList.add("filled");
+            }
+            input.addEventListener("focus", () => {
+                input.classList.add("filled");
+            });
+            input.addEventListener("blur", () => {
+                if (input.value.trim() === "") {
+                    input.classList.remove("filled");
+                }
+            });
+        });
+    </script>
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
