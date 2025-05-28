@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aproveita</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <style>
+        /* Estilos específicos para a home */
+        .logo-container {
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+        .logo-text {
+            font-size: 4.3em;
+            font-weight: 700;
+            color: #3a5795;
+            margin: 0;
+        }
+        
+        .logo-subtitle {
+            font-size: 1.5em;
+            color: #a59f2e;
+            margin-top: 10px;
+        }
+        
+        .home-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 1px;
+        }
+        
+        .home-btn {
+            background-color: #3a5795;
+            color: white;
+            padding: 15px 1px;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .home-btn:hover {
+            background-color: #2e4575;
+        }
+        
+        .home-btn.secondary {
+            background-color: white;
+            color: #3a5795;
+            border: 2px solid #3a5795;
+        }
+        
+        .home-btn.secondary:hover {
+            background-color: #f0f3f8;
+        }
+        
+        .home-icon {
+            margin-right: 10px;
+        }
+        
+        .welcome-text {
+            text-align: center;
+            margin: 20px 0 40px;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .footer-text {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile-container">
+        <header class="header">
+            <div class="header-top-text">Welldone!</div>
+            <div class="header-main">
+                <h1>Bem-vindo!</h1>
+            </div>
+        </header>
+        <main class="form-container">
+            <div class="logo-container">
+                <h1 class="logo-text">WellDone!</h1>
+                <p class="logo-subtitle">Para alunos irem mais longe.</p>
+            </div>
+            
+            <p class="welcome-text">Acesse sua conta ou cadastre-se para gerenciar seus estudos.</p>
+            
+            <div class="home-buttons">
+                <a href="login.html" class="home-btn">
+                    <i class="material-icons home-icon">login</i>
+                    Entrar
+                </a>
+                <a href="cadastro.html" class="home-btn secondary">
+                    <i class="material-icons home-icon">person_add</i>
+                    Cadastrar
+                </a>
+            </div>
+            
+            <p class="footer-text">© 2025 WellDone! - Todos os direitos reservados</p>
+        </main>
+    </div>
+    
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
